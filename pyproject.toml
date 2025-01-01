@@ -1,0 +1,52 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[project]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Topic :: Multimedia :: Video",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "manim>=0.18.1",
+    "numpy>=2.2.1",
+    "opencv-python>=4.10.0.84",
+    "svgpathtools>=1.6.1",
+    "tqdm>=4.67.1",
+]
+description = "A tool for visualizing a Fourier series in Manim"
+keywords = ["manim", "fourier"]
+license = {file = "LICENSE"}
+name = "manim-fourier-series"
+readme = "README.md"
+requires-python = ">=3.11"
+version = "0.1.0"
+
+[project.optional-dependencies]
+docs = ["mkdocs-material>=9.5.49", "mkdocstrings[python]>=0.27.0"]
+
+[tool.black]
+target-version = ["py311", "py312"]
+
+[tool.docformatter]
+recursive = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["manim_fourier_series"]
+
+[tool.isort]
+profile = "black"
+
+[tool.uv]
+dev-dependencies = [
+    "black>=24.10.0",
+    "docformatter[tomli]>=1.7.5",
+    "isort>=5.13.2",
+    "pre-commit>=4.0.1",
+]
