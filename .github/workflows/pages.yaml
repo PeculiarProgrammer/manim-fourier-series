@@ -14,9 +14,14 @@ jobs:
                 run: |
                     git config user.name github-actions[bot]
                     git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-            -   uses: actions/setup-python@v5
+            -   name: Setup Python
+                uses: actions/setup-python@v2
                 with:
-                    python-version: 3.x
+                    python-version: 3.11
+            -   name: Setup uv
+                uses: astral-sh/setup-uv@v5
+                with:
+                    enable-cache: true
             -   run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
             -   uses: actions/cache@v4
                 with:
@@ -24,5 +29,8 @@ jobs:
                     path: .cache
                     restore-keys: |
                         mkdocs-material-
-            -   run: pip install mkdocs-material
-            -   run: mkdocs gh-deploy --force
+            -   name: Install manim dependencies on Ubuntu
+                run: |
+                    sudo apt-get update
+                    sudo apt-get install pkg-config build-essential libcairo-dev libpango1.0-dev ffmpeg freeglut3-dev xvfb
+            -   run: uv run --frozen --extra docs mkdocs gh-deploy --force
