@@ -1,5 +1,10 @@
 # Manim Fourier Series (Epicycles)
 
+<video controls autoplay muted>
+    <source src="https://github.com/PeculiarProgrammer/manim-fourier-series/raw/refs/heads/master/examples/output/Handshake.mp4" type="video/mp4">
+</video>
+
+
 A Fourier series is a method of converting any closed path into a series of rotating vectors. This Manim tool makes generating these rotating vectors significantly easier.
 
 Simply install:

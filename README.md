@@ -2,6 +2,8 @@
 
  > An improved version of [George Ogden's Fourier-Transform](https://github.com/George-Ogden/Fourier-Transform) tool.
 
+https://github.com/user-attachments/assets/b25d2833-4cb0-424b-aba4-d80ca4646b10
+
 A Fourier series is a method of converting any closed path into a series of rotating vectors. This Manim tool makes generating these rotating vectors significantly easier.
 
 
