@@ -308,7 +308,7 @@ class FourierSeries:
             The text to generate points from.
         font : str
             A path to a font file, to be passed to `PIL.ImageFont.truetype`. A cursive font
-            is highly recommended for multiple letters. Try [Brush Script MT](https://github.com/PeculiarProgrammer/manim-fourier-series) or similar.
+            is highly recommended for multiple letters. Try [Brush Script MT](https://github.com/PeculiarProgrammer/manim-fourier-series/raw/refs/heads/master/examples/fonts/brush.ttf) or similar.
         remove_internal : bool, optional
             Whether or not internal contours should be removed. In simple terms, when this
             is True, any paths that are within another path will not be rendered. For
