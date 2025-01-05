@@ -229,6 +229,7 @@ class FourierSeries:
         self.add(fs.mobject)
 
         self.play(fs.revolve(1), run_time=5, rate_func=linear) # A linear rate function is highly recommended
+        ```
         """
         return self.tracker.animate.set_value(revolutions * 2 * np.pi)
 
