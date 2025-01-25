@@ -1,6 +1,6 @@
 site_name: Manim Fourier Series
-site_url: https://peculiarprogrammer.github.io/manim-fourier-series/
-repo_url: https://github.com/PeculiarProgrammer/manim-fourier-series/
+site_url: https://taibeled.github.io/manim-fourier-series/
+repo_url: https://github.com/taibeled/manim-fourier-series/
 
 theme:
     name: material

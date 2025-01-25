@@ -1,7 +1,7 @@
 # Manim Fourier Series (Epicycles)
 
 <video controls autoplay muted>
-    <source src="https://github.com/PeculiarProgrammer/manim-fourier-series/raw/refs/heads/master/examples/output/Handshake.mp4" type="video/mp4">
+    <source src="https://github.com/taibeled/manim-fourier-series/raw/refs/heads/master/examples/output/Handshake.mp4" type="video/mp4">
 </video>
 
 
@@ -10,7 +10,7 @@ A Fourier series is a method of converting any closed path into a series of rota
 Simply install:
 
 ```shell
-pip3 install git+https://github.com/PeculiarProgrammer/manim-fourier-series.git
+pip3 install git+https://github.com/taibeled/manim-fourier-series.git
 ```
 
 !!! warning
